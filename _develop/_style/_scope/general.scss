@@ -1,0 +1,7 @@
+@import '../_utilities/generated-imagehelper';
+
+div {
+  @extend %congratulations-jpg;
+  display: flex;
+  justify-content: flex-end;
+}

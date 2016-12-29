@@ -1,0 +1,30 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true,
+        "jquery": true
+    },
+    "globals": {
+        "$M": true,
+        "$Y": true,
+        "$": true
+    },
+    "extends": "standard",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+      "semi": 0,
+      "space-before-function-paren": 0,
+      "camelcase": [0, {properties: "never"}],
+      "keyword-spacing": ["error", {
+        "overrides": {
+          "if": { "after": false },
+          "for": { "after": false },
+          "while": { "after": false }
+        }
+      }]
+    }
+}
