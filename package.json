@@ -17,6 +17,7 @@
   "author": "B4B0PaD",
   "license": "ISC",
   "dependencies": {
+    "@cedx/gulp-php-minify": "^1.1.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.0",
     "babel-loader": "^6.2.7",
@@ -31,6 +32,7 @@
     "gulp": "^3.9.1",
     "gulp-cached": "^1.1.0",
     "gulp-eslint": "^3.0.1",
+    "gulp-include": "^2.3.1",
     "gulp-notify": "^2.2.0",
     "gulp-postcss": "^6.2.0",
     "gulp-progeny": "^0.3.1",
