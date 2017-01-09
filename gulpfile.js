@@ -25,6 +25,7 @@ var {phpMinify} = require('@cedx/gulp-php-minify');
 
 var style_notification_flag = false;
 var script_notification_flag = false;
+var structure_notification_flag = false;
 
 // ==========================
 // POST-CSS PLUGINS
@@ -98,14 +99,18 @@ gulp.task('watch', [
   'watch_dev_style',
   'watch_dev_structure',
   'notify_style_build',
-  'notify_js_build'
+  'notify_js_build',
+  'notify_structure_build'
 ], () => {
   setTimeout(() => {
     style_notification_flag = true;
-  }, 1);
+  }, 30000);
   setTimeout(() => {
     script_notification_flag = true;
   }, 30000);
+  setTimeout(() => {
+    structure_notification_flag = true;
+  }, 1);
 });
 
 gulp.task('watch_dev_structure', () => {
@@ -152,6 +157,23 @@ gulp.task('notify_style_build', () => {
           if(style_notification_flag) {
             return {
               title: 'SASS Builder',
+              message: '<%= file.relative %> updated'
+            };
+          }
+          return false;
+        }));
+    })
+});
+
+gulp.task('notify_structure_build', () => {
+  return gulp.watch(
+    path.join(build_php_path, '**/*.php'), (event) => {
+      notify.logLevel(2);
+      gulp.src(event.path)
+        .pipe(notify((file) => {
+          if(structure_notification_flag) {
+            return {
+              title: 'Structure Builder',
               message: '<%= file.relative %> updated'
             };
           }
