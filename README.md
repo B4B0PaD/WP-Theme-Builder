@@ -1,6 +1,10 @@
 # WP Theme Builder
 
-This project is made to help wordpress developers in theme building.
+This boilerplate project is made to help wordpress developers in theme building.
+
+1. Launch the node watch
+2. Write your template code in the project folder
+3. View your fully optimized generated theme!
 
 =======================================================
 
@@ -13,6 +17,7 @@ This project is made to help wordpress developers in theme building.
 - Sourcemaps
 
 ###Script Features
+- Import files
 - All ES6 features ([view](http://es6-features.org/))
 - Incremental build for nested files
 - JS File Minification
@@ -24,6 +29,7 @@ This project is made to help wordpress developers in theme building.
 
 ###Other Features
 - OS notify handler for built files
+- SASS and JS Linters
 
 =======================================================
 
@@ -49,10 +55,13 @@ From terminal write:
 - "**npm run lint**" to _check_ your scss and js file
 
 ##How to
-All your code should be written in the **\_develop folder**.
+All your code should be written in the **\_develop/** folder.
 
 ####Write style
+All code written in the _wp-content/themes/**\_develop/\_style/\_scope/**_ folder will be build to _wp-content/themes/**THEME_NAME/\_style/**_ destination folder
 
 ####Write script
+All code written in the _wp-content/themes/**\_develop/\_script/\_scope/**_ folder will be build to _wp-content/themes/**THEME_NAME/\_sscript/**_ destination folder
 
 ####Write template structure
+All code written in the _wp-content/themes/**\_develop/\_php/**_ folder will be build to _wp-content/themes/**THEME_NAME/**_ destination folder
