@@ -48,6 +48,9 @@ This boilerplate project is made to help wordpress developers in theme building.
 
 After this step, the theme folder will be created next to the project folder, named correctly, with the template file _style.css_ inside.
 
+![Structure screenshot 01](./screen1.jpg)
+  :scale: 50%
+
 ####Commands
 From terminal write:
 - "**npm run build**" for a _single build_
