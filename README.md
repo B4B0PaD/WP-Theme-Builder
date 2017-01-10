@@ -8,6 +8,13 @@ This boilerplate project is made to help wordpress developers in theme building.
 
 =======================================================
 
+###Build languages (compiler)
+- Ecmascript 6 (**[Webpack](https://webpack.github.io/)** + **[Babel](https://babeljs.io/)**)
+- SCSS (**[node-sass](https://github.com/sass/node-sass)** + **[CSSNano](http://cssnano.co/)**)
+- PHP (**[Node](https://nodejs.org/)**)
+
+=======================================================
+
 ###Style Features
 - Autoprefixer
 - Automatic image handler SCSS file generator
@@ -30,15 +37,6 @@ This boilerplate project is made to help wordpress developers in theme building.
 ###Other Features
 - OS notify handler for built files
 - SASS and JS Linters
-
-=======================================================
-
-###Build languages (compiler)
-- Ecmascript 6 (**[Webpack](https://webpack.github.io/)** + **[Babel](https://babeljs.io/)**)
-- SCSS (**[node-sass](https://github.com/sass/node-sass)** + **[CSSNano](http://cssnano.co/)**)
-- PHP (**[Node](https://nodejs.org/)**)
-
-=======================================================
 
 ##Quick guide
 
