@@ -33,12 +33,14 @@ This boilerplate project is made to help wordpress developers in theme building.
 
 =======================================================
 
-####Build languages (compiler):
+###Build languages (compiler)
 - Ecmascript 6 (**[Webpack](https://webpack.github.io/)** + **[Babel](https://babeljs.io/)**)
 - SCSS (**[node-sass](https://github.com/sass/node-sass)** + **[CSSNano](http://cssnano.co/)**)
 - PHP (**[Node](https://nodejs.org/)**)
 
-##Node Package
+=======================================================
+
+##Quick guide
 
 ####Installation
 - Download the project in the WP theme folder
@@ -55,16 +57,13 @@ From terminal write:
 - "**npm run lint**" to _check_ your scss and js file
 
 ##How to
-All your code should be written in the **\_develop/** folder.
+All your code should be written in the "**\_develop/**" folder.
 
 ####Write style
-All code written in the _wp-content/themes/**\_develop/\_style/\_scope/**_ folder will be build to
-_wp-content/themes/**THEME_NAME/\_style/**_ destination folder
+All code written in the "_wp-content/themes/**\_develop/\_style/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_style/**_" destination folder
 
 ####Write script
-All code written in the _wp-content/themes/**\_develop/\_script/\_scope/**_ folder will be build to
-_wp-content/themes/**THEME_NAME/\_sscript/**_ destination folder
+All code written in the "_wp-content/themes/**\_develop/\_script/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_sscript/**_" destination folder
 
 ####Write template structure
-All code written in the _wp-content/themes/**\_develop/\_php/**_ folder will be build to
-_wp-content/themes/**THEME_NAME/**_ destination folder
+All code written in the "_wp-content/themes/**\_develop/\_php/**_" folder will be build to "_wp-content/themes/**THEME_NAME/**_" destination folder
