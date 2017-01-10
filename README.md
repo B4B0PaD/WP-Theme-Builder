@@ -68,6 +68,8 @@ All code written in the "_wp-content/themes/**\_develop/\_style/\_scope/**_" fol
 ####Write script
 All code written in the "_wp-content/themes/**\_develop/\_script/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_script/**_" destination folder
 
+![Structure screenshot 04](./screen4.jpg)
+
 ####Write template structure
 All code written in the "_wp-content/themes/**\_develop/\_php/**_" folder will be build to "_wp-content/themes/**THEME_NAME/**_" destination folder
 
