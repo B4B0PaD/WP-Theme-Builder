@@ -42,7 +42,7 @@ This node-js boilerplate project is made to help wordpress developers in theme b
 ##Quick guide
 
 ####Installation
-- Download the project in the WP theme folder
+- Download or clone the project in the WP theme folder
 - Access the project folder and do "npm install"
 - Open gulpfile.js and edit your WP theme informations
 - Run "npm run build"
@@ -51,7 +51,7 @@ After this step, the theme folder will be created next to the project folder, na
 
 ![Structure screenshot 01](./screen1.jpg)
 
-####Commands
+####Usage
 From terminal write:
 - "**npm run build**" for a _single build_
 - "**npm run watch**" to _incremental build_
