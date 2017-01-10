@@ -1,6 +1,6 @@
 # WP Theme Builder
 
-This boilerplate project is made to help wordpress developers in theme building.
+This node-js boilerplate project is made to help wordpress developers in theme building.
 
 1. Launch the node watch
 2. Write your template code in the project folder
