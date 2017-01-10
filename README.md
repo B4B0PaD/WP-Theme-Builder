@@ -50,7 +50,6 @@ This boilerplate project is made to help wordpress developers in theme building.
 After this step, the theme folder will be created next to the project folder, named correctly, with the template file _style.css_ inside.
 
 ![Structure screenshot 01](./screen1.jpg)
-  :scale: 50%
 
 ####Commands
 From terminal write:
@@ -94,3 +93,4 @@ echo "test 00"; function printTest() { for ($i=4; $i < 9; $i++) { echo "test " .
 <?php
 echo "ok 01"; echo "ok 02"; echo "ok 03"; printTest(); ?>
 ```
+![Structure screenshot 02](./screen2.jpg)
