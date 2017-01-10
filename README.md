@@ -61,7 +61,7 @@ All your code should be written in the "**\_develop/**" folder.
 All code written in the "_wp-content/themes/**\_develop/\_style/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_style/**_" destination folder
 
 ####Write script
-All code written in the "_wp-content/themes/**\_develop/\_script/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_sscript/**_" destination folder
+All code written in the "_wp-content/themes/**\_develop/\_script/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_script/**_" destination folder
 
 ####Write template structure
 All code written in the "_wp-content/themes/**\_develop/\_php/**_" folder will be build to "_wp-content/themes/**THEME_NAME/**_" destination folder
