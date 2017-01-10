@@ -46,7 +46,7 @@ This boilerplate project is made to help wordpress developers in theme building.
 - Open gulpfile.js and edit your WP theme informations
 - Run "npm run build"
 
-After this step the theme folder will be create next to the project folder, named correctly, with the template file _style.css_ file inside.
+After this step, the theme folder will be created next to the project folder, named correctly, with the template file _style.css_ inside.
 
 ####Commands
 From terminal write:
@@ -58,10 +58,13 @@ From terminal write:
 All your code should be written in the **\_develop/** folder.
 
 ####Write style
-All code written in the _wp-content/themes/**\_develop/\_style/\_scope/**_ folder will be build to _wp-content/themes/**THEME_NAME/\_style/**_ destination folder
+All code written in the _wp-content/themes/**\_develop/\_style/\_scope/**_ folder will be build to
+_wp-content/themes/**THEME_NAME/\_style/**_ destination folder
 
 ####Write script
-All code written in the _wp-content/themes/**\_develop/\_script/\_scope/**_ folder will be build to _wp-content/themes/**THEME_NAME/\_sscript/**_ destination folder
+All code written in the _wp-content/themes/**\_develop/\_script/\_scope/**_ folder will be build to
+_wp-content/themes/**THEME_NAME/\_sscript/**_ destination folder
 
 ####Write template structure
-All code written in the _wp-content/themes/**\_develop/\_php/**_ folder will be build to _wp-content/themes/**THEME_NAME/**_ destination folder
+All code written in the _wp-content/themes/**\_develop/\_php/**_ folder will be build to
+_wp-content/themes/**THEME_NAME/**_ destination folder
