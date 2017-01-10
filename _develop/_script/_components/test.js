@@ -1,3 +1,3 @@
-let pluto = 'tyussss';
+let foo = 'foo';
 
-export default pluto;
+export default foo;

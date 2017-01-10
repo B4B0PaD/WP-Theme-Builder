@@ -1,4 +1,22 @@
 /* eslint-disable */
+
+// ==========================
+// VARIABLES
+// ==========================
+var THEME_NAME = 'test';
+var THEME_URI = 'http://';
+var THEME_AUTHOR = 'B4B0PaD';
+var THEME_AUTHOR_URI = 'https://it.linkedin.com/in/andrea-babini-a7429019';
+var THEME_DESCRIPTION = 'my new wordpress theme';
+var THEME_VERSION = '1.0';
+var THEME_LICENSE_VERSION = 'GNU General Public License v2 or later';
+var THEME_LICENSE_URI = 'http://www.gnu.org/licenses/gpl-2.0.html';
+var THEME_TAGS = 'light, one-column, two-columns';
+var THEME_TEXT_DOMAIN = `${THEME_NAME}
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.`;
+
 // ==========================
 // COMPONENTS
 // ==========================
@@ -15,6 +33,7 @@ var sassImage = require('gulp-sass-image');
 var sourcemaps = require('gulp-sourcemaps');
 var progeny = require('gulp-progeny');
 var fs = require('fs');
+var fsPath = require('fs-path');
 var globby = require('globby');
 var sassLint = require('gulp-sass-lint');
 var eslint = require('gulp-eslint');
@@ -45,7 +64,6 @@ var processors = [
 // ==========================
 // PATHS
 // ==========================
-var THEME_NAME = 'test';
 
 var base_path = __dirname;
 
@@ -61,7 +79,7 @@ var dev_php_path = path.join(develop_path, '_php');
 var build_script_path = path.join(build_path, '_script');
 var build_style_path = path.join(build_path, '_style');
 var build_image_path = path.join(build_path, '_image');
-var build_php_path = path.join(build_path, '_php');
+var build_php_path = build_path;
 
 var dev_script_scope_path = path.join(dev_script_path, '_scope');
 var dev_style_scope_path = path.join(dev_style_path, '_scope');
@@ -69,7 +87,11 @@ var dev_style_scope_path = path.join(dev_style_path, '_scope');
 // ==========================
 // DEV TASKS - BASE
 // ==========================
-gulp.task('build', gulpsync.async(['build_js', 'build_style', 'build_structure']));
+gulp.task('build', gulpsync.async(['build_structure', 'build_js', 'build_style']));
+
+/* ========== THEME ========== */
+
+gulp.task('environment_init', environmentInit);
 
 /* ========== JS ========== */
 
@@ -87,7 +109,7 @@ gulp.task('sass-image', generateImageHelper);
 
 /* ========== PHP ========== */
 
-gulp.task('build_structure', gulpsync.sync(['build_php', 'minify_php']));
+gulp.task('build_structure', gulpsync.sync(['environment_init', 'build_php', 'minify_php']));
 gulp.task('build_php', buildPhp);
 gulp.task('minify_php', minifyPhp);
 
@@ -185,6 +207,30 @@ gulp.task('notify_structure_build', () => {
 // ==========================
 // FUNCTIONS
 // ==========================
+
+function environmentInit() {
+  fsPath.writeFile(
+    path.join(build_path, 'style.css'),
+    `/*
+Theme Name: ${THEME_NAME}
+Theme URI: ${THEME_URI}
+Author: ${THEME_AUTHOR}
+Author URI: ${THEME_AUTHOR_URI}
+Description: ${THEME_DESCRIPTION}
+Version: ${THEME_VERSION}
+License: Version: ${THEME_LICENSE_VERSION}
+License URI: ${THEME_LICENSE_URI}
+Tags: ${THEME_TAGS}
+Text Domain: ${THEME_TEXT_DOMAIN}
+*/
+    `,
+    (err) => {
+      if(err) {
+        return console.log(err);
+      }
+    }
+  )
+}
 
 function buildJS() {
   return gulp.src([

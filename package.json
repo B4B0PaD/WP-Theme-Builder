@@ -1,7 +1,11 @@
 {
   "name": "WP_theme_builder",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Ci sono solo 10 tipi di persone che conoscono il linguaggio binario: quelli che lo conoscono e quelli che non lo conoscono.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
   "scripts": {
     "livereload": "node ./livereload.config.js",
     "watch": "parallelshell \"gulp webpack_js --watch\" \"gulp watch\" \"npm run livereload\"",
@@ -10,7 +14,13 @@
   },
   "keywords": [
     "gulp",
+    "webpack",
+    "builder",
+    "wordpress",
+    "wp",
+    "theme",
     "sass",
+    "scss",
     "js",
     "es6"
   ],
@@ -28,6 +38,7 @@
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.3.1",
     "eslint-plugin-standard": "^2.0.1",
+    "fs-path": "0.0.23",
     "globby": "^6.1.0",
     "gulp": "^3.9.1",
     "gulp-cached": "^1.1.0",

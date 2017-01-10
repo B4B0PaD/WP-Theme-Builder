@@ -1,5 +1,5 @@
-import pluto from 'COMPONENTS/test.js';
+import foo from 'COMPONENTS/test.js';
 
-let pippo = 'test';
+let bar = 'bar';
 
-console.log(pippo, pluto);
+console.log(bar, foo);
