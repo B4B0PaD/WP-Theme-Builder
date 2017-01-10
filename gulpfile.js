@@ -68,7 +68,7 @@ var processors = [
 var base_path = __dirname;
 
 var develop_path = path.join(base_path, '_develop');
-var build_path = path.join(base_path, '_build', THEME_NAME);
+var build_path = path.join(base_path, '..', THEME_NAME);
 var tmp_files_path = path.join(base_path, '.tmp');
 
 var dev_script_path = path.join(develop_path, '_script');
@@ -326,7 +326,7 @@ function buildStyle() {
 }
 
 function buildPhp() {
-  return gulp.src(path.join(dev_php_path, '*.php'))
+  return gulp.src(path.join(dev_php_path, '**/*.php'))
     .pipe(include({
         extensions: "php",
         hardFail: true,
