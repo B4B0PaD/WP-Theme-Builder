@@ -58,20 +58,20 @@ From terminal write:
 - "**npm run lint**" to _check_ your scss and js file
 
 ##How to
-All your code should be written in the "**\_develop/**" folder.
+All your code should be written in the "**WP-Theme-Builder/\_develop/**" folder.
 
 ####Write style
-All code written in the "_wp-content/themes/**\_develop/\_style/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_style/**_" destination folder
+All code written in the "_wp-content/themes/**WP-Theme-Builder/\_develop/\_style/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_style/**_" destination folder
 
 ![Structure screenshot 03](./screen3.jpg)
 
 ####Write script
-All code written in the "_wp-content/themes/**\_develop/\_script/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_script/**_" destination folder
+All code written in the "_wp-content/themes/**WP-Theme-Builder/\_develop/\_script/\_scope/**_" folder will be build to "_wp-content/themes/**THEME_NAME/\_script/**_" destination folder
 
 ![Structure screenshot 04](./screen4.jpg)
 
 ####Write template structure
-All code written in the "_wp-content/themes/**\_develop/\_php/**_" folder will be build to "_wp-content/themes/**THEME_NAME/**_" destination folder
+All code written in the "_wp-content/themes/**WP-Theme-Builder/\_develop/\_php/**_" folder will be build to "_wp-content/themes/**THEME_NAME/**_" destination folder
 
 - Write PHP code in the _\_php_ folder as you are in your root theme folder
 - Include PHP files outside `<?php ... ?>` tags with "**//=include RELATIVE_PATH/FILE.PHP**" format.
