@@ -37,6 +37,7 @@ This boilerplate project is made to help wordpress developers in theme building.
 ###Other Features
 - OS notify handler for built files
 - SASS and JS Linters
+- [Livereload](https://www.npmjs.com/package/livereload) server with CSS destination folder target
 
 ##Quick guide
 
