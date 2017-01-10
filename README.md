@@ -65,3 +65,28 @@ All code written in the "_wp-content/themes/**\_develop/\_script/\_scope/**_" fo
 
 ####Write template structure
 All code written in the "_wp-content/themes/**\_develop/\_php/**_" folder will be build to "_wp-content/themes/**THEME_NAME/**_" destination folder
+
+- Write PHP code in the _\_php_ folder as you are in your root theme folder
+- Include PHP files outside `<?php ... ?>` tags with "**//=include RELATIVE_PATH/FILE.PHP**" format.
+
+See this example:
+```php
+//=include a_folder/test2.php
+<?php
+echo "ok 01";
+echo "ok 02";
+echo "ok 03";
+
+printTest();
+?>
+```
+**REMEMBER**: Only the **FIRST LEVEL** files of _\_php_ folder will be move to the destination folder.
+
+The generated final code will be:
+```php
+<?php
+echo "test 00"; function printTest() { for ($i=4; $i < 9; $i++) { echo "test " . $i; } } ?>
+
+<?php
+echo "ok 01"; echo "ok 02"; echo "ok 03"; printTest(); ?>
+```
