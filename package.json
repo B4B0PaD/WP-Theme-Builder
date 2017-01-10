@@ -1,10 +1,10 @@
 {
   "name": "WP_theme_builder",
   "version": "1.1.0",
-  "description": "Ci sono solo 10 tipi di persone che conoscono il linguaggio binario: quelli che lo conoscono e quelli che non lo conoscono.",
+  "description": "A node-js boilerplate project to help wordpress developers in theme building",
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/B4B0PaD/WP-Theme-Builder"
   },
   "scripts": {
     "livereload": "node ./livereload.config.js",
